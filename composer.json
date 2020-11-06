@@ -1,0 +1,23 @@
+{
+    "name": "sonar200/singleton",
+    "description": "singleton",
+    "type": "library",
+    "keywords": ["php", "singleton"],
+    "homepage": "https://github.com/sonar200/singleton",
+    "license": "MIT",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Ivan Ivanov",
+            "email": "ivan@sonar200.ru"
+        }
+    ],
+    "require": {
+        "php": ">=7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sonar200\\Singleton\\": "src/"
+        }
+    }
+}
