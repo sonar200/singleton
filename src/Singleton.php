@@ -14,12 +14,12 @@ class Singleton
      *
      * @var array
      */
-    protected static array $instances = [];
+    protected static $instances = [];
 
     /**
      * Constructor
      *
-     * @since 1.0.0
+     * @since 1.0.1
      */
     protected function __construct()
     {
@@ -31,7 +31,7 @@ class Singleton
      *
      * @return void
      *
-     * @since  1.0.0
+     * @since  1.0.1
      */
     protected function __clone()
     {
@@ -40,7 +40,7 @@ class Singleton
     /**
      * Wakeup method
      *
-     * @since 1.0.0
+     * @since 1.0.1
      */
     public function __wakeup()
     {
@@ -51,9 +51,9 @@ class Singleton
      *
      * @return Singleton
      *
-     * @since  1.0.0
+     * @since  1.0.1
      */
-    public static function get(): Singleton
+    public static function getInstance(): Singleton
     {
         $class = get_called_class();
 
